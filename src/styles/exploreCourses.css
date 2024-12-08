@@ -1,0 +1,35 @@
+.explore-courses {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.explore-courses h2 {
+    font-size: 2rem;
+    color: #312219;
+    margin-bottom: 1rem;
+}
+
+.explore-courses__search {
+    margin-bottom: 2rem;
+}
+
+.explore-courses__search input {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5rem;
+    border: 1px solid #d5c740;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.explore-courses__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.explore-courses__empty {
+    font-size: 1.2rem;
+    color: #d5c740;
+}
