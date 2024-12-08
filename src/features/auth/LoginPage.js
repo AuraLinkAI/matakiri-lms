@@ -7,7 +7,7 @@ function LoginPage() {
         <div className="auth-page">
             <div className="auth-container">
                 <div className="auth-left">
-                    <h2>Hey There!</h2>
+                    <h2>Hey There!kgccycxiyxyxyxyxyfxfxgxxgcgxfhxfhxh</h2>
                     {/* <p>Welcome back. You are just one step away from your feed.</p> */}
                     <Link to="/signup" className="btn-outline">Sign Up</Link>
                 </div>
