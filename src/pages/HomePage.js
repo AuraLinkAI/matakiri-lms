@@ -1,22 +1,19 @@
 import React from "react";
 import HeroSection from "../components/HeroSection";
 import ExploreCourses from "../features/homepage/ExploreCourses";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import { useAuth } from '../Context/AuthContext'; // Ensure the path is correct
 
 function HomePage() {
+    const { isAuthenticated } = useAuth(); // Use the authentication status
+
     return (
         <div>
-             {/* Header */}
-                <Header />
             {/* Hero Section */}
             <HeroSection/>
 
-            {/* Explore Courses Section */}
-            <ExploreCourses />
-
-            {/* Footer */}
-            <Footer />
+            {/* Explore Courses Section - Always shown, but could adapt based on auth status */}
+            <ExploreCourses isAuthenticated={isAuthenticated} />
+            
         </div>
     );
 }
